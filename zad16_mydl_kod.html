@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_mydlowski() {
+            window.close()
+        }
+        29
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Mydłowski" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+ <head>
+ <title> </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:navy;font-size:100px;">
+ <script language="JavaScript">
+let A=prompt("A=","");
+let A_myd=parseFloat(A);
+let B=prompt("B=","");
+let B_myd=parseFloat(B);
+
+let C_myd=A_myd*A_myd*A_myd;
+let D_myd=3*A_myd*A_myd*B_myd;
+let E_myd=3*A_myd*B_myd*B_myd;
+let F_myd=B_myd*B_myd*B_myd;
+let O_myd=C_myd+D_myd+E_myd+F_myd;
+
+document.write("A="+A_myd+" "+"B="+B_myd+"<br>");
+document.write("("+A_myd+"+");
+document.write(B_myd+")^3=");
+document.write(A_myd+"^3 + 3*(("+A_myd+")^"+B_myd+")*("+B_myd+") + 3*("+A_myd+")*(("+B_myd+")^"+B_myd+")");
+document.write(B_myd+"^3 = "+C_myd+"+"+D_myd+"+"+E_myd+"+"+F_myd+"="+O_myd+"<br>");
+ </script>
+</div>
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_mydlowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
