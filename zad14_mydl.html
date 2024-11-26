@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 14 Mydłowski</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="strona" style="color:red;font-size:50px;">
+        <script language="JavaScript">
+            let m_myd = prompt("Podaj ułamek egipski:", "");
+            let m = parseInt(m_myd)
+            let wynik1 = m + 2;
+            let wynik2 = (m+1)*(m+2)
+            let wynik3 = m*(m+1)
+            document.getElementById("strona").innerHTML = "1/" + m + " = 1/" + wynik1 + " + 1/" + wynik2 + " + 1/" + wynik3;
+        </script>
+    </div>
+</body>
+
+</html>
