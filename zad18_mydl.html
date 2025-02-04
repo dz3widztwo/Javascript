@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> Użycie funkcji </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ 
+ let a=parseFloat(prompt("a=",""));
+ let b=parseFloat(prompt("b=",""));
+ 
+ 
+ function monzenie_myd(a, b) 
+ {
+ return a * b;
+ }
+ function odejmowanie_myd(a, b) 
+ {
+ return a - b;
+ }
+ function do_kwadratu_myd(a, b) 
+ {
+ return a*a;
+ return b*b;
+ } 
+ function reszta_z_dzielenia_a_przez_b_myd(a, b) 
+ {
+ return a % b;
+ }
+ function suma_myd(a, b) 
+ {
+ return a + b;
+ }
+ document.write("podane liczby: a="+a+"  " +"b="+b+"<br>");
+ document.write("suma="+suma_myd(a,b)+"<br>");
+ document.write("mnożenie="+monzenie_myd(a,b)+"<br>");
+ document.write("odejmowanie="+odejmowanie_myd(a,b)+"<br>");
+ document.write("do kwadratu="+do_kwadratu_myd(a)+"<br>");
+ document.write("do kwadratu="+do_kwadratu_myd(b)+"<br>");
+ document.write("reszta z dzielenia a przez b = "+reszta_z_dzielenia_a_przez_b_myd(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html>
