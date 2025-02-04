@@ -1,0 +1,78 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Mydłowski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Mydłowski" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 20</title>
+    <script language="JavaScript">
+        function AB_myd() {
+            const xa = parseFloat(document.getElementById("xa").value);
+            const ya = parseFloat(document.getElementById("ya").value);
+            const xb = parseFloat(document.getElementById("xb").value);
+            const yb = parseFloat(document.getElementById("yb").value);
+
+            const AB = Math.sqrt(Math.pow(xb - xa, 2) + Math.pow(yb - ya, 2));
+			
+            document.getElementById("nazwa").innerHTML = `Długość boku AB = ${AB.toFixed(2)}`;
+        }
+
+        function BC_myd() {
+            const xb = parseFloat(document.getElementById("xb").value);
+            const yb = parseFloat(document.getElementById("yb").value);
+            const xc = parseFloat(document.getElementById("xc").value);
+            const yc = parseFloat(document.getElementById("yc").value);
+
+            const BC = Math.sqrt(Math.pow(xc - xb, 2) + Math.pow(yc - yb, 2));
+            document.getElementById("nazwa").innerHTML = `Długość boku BC = ${BC.toFixed(2)}`;
+        }
+
+        function AC_myd() {
+            const xa = parseFloat(document.getElementById("xa").value);
+            const ya = parseFloat(document.getElementById("ya").value);
+            const xc = parseFloat(document.getElementById("xc").value);
+            const yc = parseFloat(document.getElementById("yc").value);
+
+            const AC = Math.sqrt(Math.pow(xc - xa, 2) + Math.pow(yc - ya, 2));
+            document.getElementById("nazwa").innerHTML = `Długość boku AC = ${AC.toFixed(2)}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Oblicz długości boków trójkąta</h1>
+    
+    <h2>Punkt A</h2>
+    Podaj xa = <input type="text" id="xa"><br>
+    Podaj ya = <input type="text" id="ya"><br><br>
+
+    <h2>Punkt B</h2>
+    Podaj xb = <input type="text" id="xb"><br>
+    Podaj yb = <input type="text" id="yb"><br><br>
+
+    <h2>Punkt C</h2>
+    Podaj xc = <input type="text" id="xc"><br>
+    Podaj yc = <input type="text" id="yc"><br><br>
+
+    <input type="button" value="Oblicz |AB|" onclick="AB_myd()"><br>
+    <input type="button" value="Oblicz |BC|" onclick="BC_myd()"><br>
+    <input type="button" value="Oblicz |AC|" onclick="AC_myd()"><br><br>
+    
+    <div style="font-size:50px;" id="nazwa"></div>
+</body>
+</html>
+
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Mydłowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
