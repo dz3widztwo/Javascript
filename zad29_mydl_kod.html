@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teoria Programowania</title>
+</head>
+<body>
+    <h1>1. W jaki sposób można określić właściwość danego obiektu (dwa sposoby wraz z przykładami)?</h1>
+    <p>Można określić właściwość obiektu poprzez:</p>
+    <ul>
+        <li>Notację kropkową: <code>obiekt.właściwość = "wartość";</code> np. <code>samochod.kolor = "czerwony";</code></li>
+        <li>Notację nawiasów kwadratowych: <code>obiekt["właściwość"] = "wartość";</code> np. <code>samochod["kolor"] = "czerwony";</code></li>
+    </ul>
+    
+    <h1>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</h1>
+    <p>Można odwołać się do pól i metod obiektu używając notacji kropkowej, np. <code>obiekt.pole</code> lub <code>obiekt.metoda()</code>, a także notacji nawiasów kwadratowych, np. <code>obiekt["pole"]</code>.</p>
+    
+    <h1>3. Wymień cechy charakterystyczne konstruktora.</h1>
+    <ul>
+        <li>Ma taką samą nazwę jak klasa.</li>
+        <li>Nie zwraca wartości (nawet <code>void</code>).</li>
+        <li>Jest wywoływany automatycznie przy tworzeniu obiektu.</li>
+    </ul>
+    
+    <h1>4. Konstruowanie obiektu na podstawie przykładu - obiekt ma trzy pola oraz jedną metodę.</h1>
+    <pre>
+class Samochod {
+    constructor(marka, model, rok) {
+        this.marka = marka;
+        this.model = model;
+        this.rok = rok;
+    }
+    wyswietlInfo() {
+        return `${this.marka} ${this.model} (${this.rok})`;
+    }
+}
+let auto = new Samochod("Toyota", "Corolla", 2020);
+console.log(auto.wyswietlInfo());
+    </pre>
+    
+    <h1>5. Znaczenie słowa this. Jak oddzielamy pola oraz metody?</h1>
+    <p><b>this</b> odnosi się do aktualnie tworzonego obiektu i pozwala na dostęp do jego pól i metod. Pola oraz metody oddzielamy za pomocą kropki (<code>.</code>), np. <code>this.pole</code>.</p>
+    
+    <h1>6. Konstruktor w JS na podstawie przykładu wraz z opisem.</h1>
+    <pre>
+function Osoba(imie, wiek) {
+    this.imie = imie;
+    this.wiek = wiek;
+    this.przedstawSie = function() {
+        return `Cześć, jestem ${this.imie} i mam ${this.wiek} lat.`;
+    };
+}
+let osoba1 = new Osoba("Jan", 25);
+console.log(osoba1.przedstawSie());
+    </pre>
+    <p>Konstruktor to specjalna funkcja, która tworzy nowe obiekty i przypisuje im wartości pól.</p>
+    
+    <h1>7. Znaczenie słowa kluczowego New wraz z przykładem.</h1>
+    <p>Słowo kluczowe <b>new</b> służy do tworzenia nowych instancji obiektów na podstawie funkcji konstruktora.</p>
+    <pre>
+let auto = new Samochod("Ford", "Focus", 2018);
+    </pre>
+    
+    <h1>8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem.</h1>
+    <p><b>prototype</b> umożliwia dodawanie metod do wszystkich instancji danej klasy.</p>
+    <pre>
+function Zwierze(gatunek) {
+    this.gatunek = gatunek;
+}
+Zwierze.prototype.dajGlos = function() {
+    return `${this.gatunek} wydaje dźwięk.`;
+};
+let pies = new Zwierze("Pies");
+console.log(pies.dajGlos());
+    </pre>
+    <p><b>Prototype</b> pozwala na rozszerzanie właściwości i metod obiektów, co oszczędza pamięć.</p>
+</body>
+</html>
