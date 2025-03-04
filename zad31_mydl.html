@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <script type="text/javascript">
+var Autobus = {
+model: 'mercedes',
+kolor: 'czerwono-biały',
+rozmiar: 'długi',
+Autobus_wyswietl_Mydlowski: function ()
+{
+ document.write(this.model + ' ' + this.kolor + ' ' + this.rozmiar)
+ }
+}
+Autobus.Autobus_wyswietl_Mydlowski();
+Autobus.rocznik="2000";
+Autobus.Autobus_pokaz_Mydlowski=function() {alert('rocznik: ' + this.rocznik + ' ')}
+Autobus.Autobus_pokaz_Mydlowski();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to Autobus<br>
+ Pola:<br>
+ model<br>
+ kolor<br>
+ rozmiar<br>
+ metoda: <br>
+ Autobus_wyswietl_Mydlowski<br>
+ nowe pole to rocznik <br>
+ nowa metoda to Autobus_pokaz_Mydlowski();<br>
+</body>
+</html>
