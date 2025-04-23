@@ -18,13 +18,6 @@ main {
   text-align: center;
 }
 
-ul {
-  text-align: left;
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-
 .button-container {
   display: flex;
   justify-content: center;
@@ -32,20 +25,18 @@ ul {
   margin-top: 30px;
 }
 
-
 .custom-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #f5f5dc; 
+  background-color: #f5f5dc; /* beżowy */
   color: black;
   text-decoration: none;
-  border: 2px solid black; 
+  border: 2px solid black; /* czarna obwódka */
   border-radius: 8px;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
 .custom-button:hover {
-  background-color: #e5e5c4; 
+  background-color: #e5e5c4; /* ciemniejszy beż */
 }
-
