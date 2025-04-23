@@ -28,15 +28,15 @@ main {
 .custom-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #f5f5dc; /* beżowy */
+  background-color: #f5f5dc; 
   color: black;
   text-decoration: none;
-  border: 2px solid black; /* czarna obwódka */
+  border: 2px solid black; 
   border-radius: 8px;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
 .custom-button:hover {
-  background-color: #e5e5c4; /* ciemniejszy beż */
+  background-color: #e3e8c4; 
 }
