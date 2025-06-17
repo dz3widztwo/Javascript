@@ -1,0 +1,42 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Mydłowski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Mydłowski" cols="120" rows="30" readonly>
+<html>
+<head>
+</head>
+<body>
+<div id="is" style="color:red;font-size:45px;">
+<script language="javascript">
+silnia_koniec=parseFloat(prompt("koniec pętli",""));
+if(silnia_koniec==0)
+ {
+document.write("silnia=1");
+ }
+else
+ {
+let silnia_myd=1;
+for(i=1;i<=silnia_koniec;i++)
+ {
+silnia_myd *=i;
+ }	
+document.write("silnia="+silnia_myd);
+ }
+</script> 
+</div>
+</body>
+</html>
+  </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Mydłowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
