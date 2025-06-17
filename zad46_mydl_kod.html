@@ -1,0 +1,44 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Mydłowski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Mydłowski" cols="120" rows="30" readonly>
+<<!DOCTYPE html>
+<head>
+<title>Sprawdzenie danych mydłowski</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:45px;">
+<script language="JavaScript">
+do
+  {
+var liczba1=prompt("wysokosc=","");
+var h_myd=parseFloat(liczba1);
+  }
+while ( h_myd<=0 || isNaN(h_myd));
+do 
+  {
+var liczba1=prompt("podstawa=","");
+var a_myd=parseFloat(liczba1);
+  }
+while(!(a_myd>0));
+var Pole=a_myd*h_myd/2;
+document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
+</script>
+</div>
+</body>
+</html>
+  </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Mydłowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
