@@ -1,0 +1,29 @@
+<html>
+<head>
+<script language="JavaScript">
+function okno_zamknij()
+ {
+window.close()
+ }
+</script>
+</head>
+<body>
+<div>
+<script language="JavaScript">
+document.write("Ilodsc wykonywania petli = 13" + "<br>");
+document.write("Wielkosc liter = 41px" + "<br>");
+var n_myd = prompt("podaj liczbe: ","");
+for (var i_myd=0; i_myd<=13; i_myd++)
+ {
+if(n_myd%2 == 0)
+ {
+document.write("<span style='color:blue;font-size:41px'>Mydłowski</span>" + "<br>");
+ }
+else document.write("<span style='color:green;font-size:41px'>Jakub</span>" + "<br>");
+ }
+</script>
+</div>
+<br>
+<button onclick="okno_zamknij()">zamknij</button>
+</body>
+</html>
