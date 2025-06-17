@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:45px;">
+<script language="JavaScript">
+do
+  {
+do
+  {
+var liczba1=prompt("bok a=","");
+var a_myd=parseFloat(liczba1);
+  }
+while (isNaN(a_myd) || a_myd <= 0);
+do
+  {
+var liczba2=prompt("bok b=","");
+var b_myd=parseFloat(liczba2);
+  }
+while (isNaN(b_myd) || b_myd <= 0);
+do
+  {
+var liczba3=prompt("bok c=","");
+var c_myd=parseFloat(liczba3);
+  }
+while (isNaN(c_myd) || c_myd <= 0);
+  }
+while (!(a_myd + b_myd > c_myd && a_myd + c_myd > b_myd && b_myd + c_myd > a_myd));
+document.write("bok a=" + a_myd + "<br>");
+document.write("bok b=" + b_myd + "<br>");
+document.write("bok c=" + c_myd + "<br>");
+</script>
+</div>
+</body>
+</html>
