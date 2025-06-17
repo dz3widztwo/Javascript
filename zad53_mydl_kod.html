@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Mydłowski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Mydłowski" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+<head>
+<title>Sprawdzenie danych Mydłowski</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="font-size:20px;">
+<script language="JavaScript">
+var a_myd=prompt("wysokosc=","");
+var b_myd=prompt("szerokosc=","");
+for(var i=0; i<b_myd;i++)
+ {
+document.write("*");
+ }
+var wiersz_myd="*";
+for ( var i=0; i<(b_myd-2); i++)
+ {
+wiersz_myd=wiersz_myd+"  ";
+ }
+wiersz_myd=wiersz_myd+"*";
+for(var i=0; i<a_myd-2;i++)
+ {
+document.write("<br>"+wiersz_myd);
+ }
+document.write("<br>");
+for(var i=0; i<b_myd;i++)
+ {
+document.write("*");
+ }
+</script>
+  </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Mydłowski()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
